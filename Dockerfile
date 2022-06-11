@@ -12,6 +12,7 @@ gcc-multilib \
 git \
 gnupg \
 gperf \
+openjdk-7-jdk \
 imagemagick \
 lib32ncurses5-dev \
 lib32readline-dev \

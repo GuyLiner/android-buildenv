@@ -34,6 +34,8 @@ zip \
 zlib1g-dev \
 libwxgtk2.8-dev \
 bsdmainutils \
-gcc-arm-linux-gnueabihf \
+
+RUN apt-get install gcc-arm-linux-gnueabihf \
 gcc-aarch64-linux-gnu
+
 ENV CROSS_COMPILE=gcc-arm-linux-gnueabihf-

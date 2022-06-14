@@ -7,6 +7,7 @@ build-essential \
 ccache \
 curl \
 flex \
+gcc \
 g++-multilib \
 gcc-multilib \
 git \
@@ -33,9 +34,10 @@ xsltproc \
 zip \
 zlib1g-dev \
 libwxgtk2.8-dev \
-bsdmainutils \
+bsdmainutils
 
-RUN apt-get install gcc-arm-linux-gnueabihf \
-gcc-aarch64-linux-gnu
+RUN apt-get update -y
+RUN apt-get install -y gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi
+
 
 ENV CROSS_COMPILE=gcc-arm-linux-gnueabihf-

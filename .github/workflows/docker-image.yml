@@ -20,7 +20,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-        images: guyliner/android-lollipop
+        images: guyliner/android-buildenv
 
     - name: Pushing Image to Docker Hub
       uses: docker/build-push-action@v2

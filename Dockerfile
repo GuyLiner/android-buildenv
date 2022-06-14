@@ -37,7 +37,7 @@ libwxgtk2.8-dev \
 bsdmainutils
 
 RUN apt-get update -y
-RUN apt-get install -y gcc-arm-linux-gnueabihf \
-gcc-aarch64-linux-gnu
+RUN apt-get install -y gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi
+
 
 ENV CROSS_COMPILE=gcc-arm-linux-gnueabihf-
